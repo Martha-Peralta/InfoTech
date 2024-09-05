@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/logo_icon_tech"
+        android:title="Inicio"/>
+    <item
+        android:id="@+id/nav_web"
+        android:icon="@drawable/image_web"
+        android:title="Web"/>
+    <item
+        android:id="@+id/nav_movil"
+        android:icon="@drawable/image_movil"
+        android:title="Móvil"/>
+    <item
+        android:id="@+id/nav_back"
+        android:icon="@drawable/imagen_back"
+        android:title="Backend"/>
+</menu>

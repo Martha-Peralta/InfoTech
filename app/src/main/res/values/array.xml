@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ArrayWeb">
+        <item>React.js: Es una biblioteca de JavaScript para construir interfaces de usuario</item>
+        <item>Vue.js: Un Framework progresivo de JavaScript para construir interfaces.</item>
+        <item>Angular: Un Framework web para desarrollo FrontEnd</item>
+    </string-array>
+
+    <string-array name="ArrayMovil">
+        <item>Kotlin: Un lenguaje de programación para Android</item>
+        <item>Flutter: Un Framework para desarrollo multiplataforma</item>
+        <item>Swift: Un lenguaje de programación para iOS</item>
+    </string-array>
+
+    <string-array name="ArrayBackend">
+        <item>Node.js: Un entorno de ejecución para JavaScript en el backend</item>
+        <item>Django: Un framework web basado en Python</item>
+        <item>Spring Boot: Un framework basado en Java para construir aplicaciones backend</item>
+    </string-array>
+</resources>

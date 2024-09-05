@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.InfoTech" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.InfoTech" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#A3B4A2</item>
+        <item name="colorPrimaryDark">#A3B4A2</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#A3B4A2</item>
+        <item name="colorPrimaryDark">#A3B4A2</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="android:background">@color/green_dark</item>
+        <item name="itemIconTint">@color/green_light</item>
+        <item name="itemTextColor">@color/green_light_2</item>
+    </style>
+
 </resources>

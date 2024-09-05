@@ -1,5 +1,6 @@
 package com.example.infotech
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -10,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.infotech.ui.theme.InfoTechTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,6 +27,12 @@ class MainActivity : ComponentActivity() {
                     Greeting("Android")
                 }
             }
+        }
+        setContentView(R.layout.portada)
+        val main_id : ConstraintLayout = findViewById(R.id.portada)
+        main_id.setOnClickListener {
+            val intent : Intent = Intent(this, Inicio::class.java)
+            startActivity(intent)
         }
     }
 }

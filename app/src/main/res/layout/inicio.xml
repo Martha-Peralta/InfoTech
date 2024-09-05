@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_dark"
+        android:title="InfoTech"
+        android:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Contenido de la pantalla -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_icon_tech"
+        app:layout_constraintBottom_toTopOf="@+id/navegacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="!Bienvenido a InfoTech!"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/navegacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <ImageView
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:src="@drawable/image_inicio"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="InfoTech es tu guía rápida para conocer las tecnologías más importantes en el mundo del desarrollo de software. Aquí encontrarás información clave sobre las herramientas y lenguajes más utilizados en desarrollo móvil, web y backend."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/navegacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.682" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navegacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_navigation"
+        app:labelVisibilityMode="labeled"
+    style="@style/BottomNavigation">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
